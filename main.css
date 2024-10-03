@@ -10,80 +10,113 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #000;
+    width: 100vw;
+    margin: 0;
+        background-color: rgb(71, 75, 72);
+    background-size: cover;
+    background-position: center;    
 
 }
+
 
 .sol {
     position: relative;
-    width: 100px;
-    height: 100px;
-    background-color: yellow;
-    border-radius: 50%;
-    background-image: url('//www.imagensempng.com.br/wp-content/uploads/2022/02/34324.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    box-shadow: rgba(255, 255, 0, 0.114);
-}
-
-.orbita {
-    position: relative;
-    top: 50%;
-    left: 50%;
     width: 200px;
     height: 200px;
+    background-image: url('https://usagif.com/wp-content/uploads/gifs/sun-40.gif');
+    background-color: yellow;
+    border-radius: 50%;
+    background-position: center;
+    opacity: 10;
+    box-shadow: 0 0 30px #efca57, 0 0 60px #bd3901;
+}
+
+.orbita-mercurio {
+
+    /* TOP: altera a posição da orbita (pra cima) */
+    /* LEFT: altera a posição da orbita (pra esquerda) */
+    /* WIDTH: altera a largura da orbita */
+    /* HEIGHT: altera a altura da orbita */
+    /* MARGIN-TOP: altera a posição da orbita */
+    /* MARGIN-LEFT: altera a posição da orbita */
+    
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 300px;
+    height: 300px;
     margin-top: -100px;
     margin-left: -100px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    animation: rotate 2s linear infinite;
+    animation: rotate 2.88s linear infinite;
     
 }
 
 .mercurio {
     position: absolute;
-    top: -25px;
+    top: -3px;
     left: 50%;
-    width: 50px;
-    height: 50px;
+    width: 5px;
+    height: 5px;
     background-color: rgb(77, 77, 77);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d0/Mercury.gif?20220616000333.gif');
+    background-position: center;
     border-radius: 50%;
     transform: translateX(-50%);
 
 }
 
-.orbita2 {
+.orbita-venus {
+
+    /* TOP: altera a posição da orbita (pra cima) */
+    /* LEFT: altera a posição da orbita (pra esquerda) */
+    /* WIDTH: altera a largura da orbita */
+    /* HEIGHT: altera a altura da orbita */
+    /* MARGIN-TOP: altera a posição da orbita */
+    /* MARGIN-LEFT: altera a posição da orbita */
+
     position: relative;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 400px;
+    top: -50%;
+    left: -1%;
+    width: 600px;
+    height: 600px;
     margin-top: -300px;
     margin-left: -200px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    animation: rotate 10s linear infinite;
+    animation: rotate 7.32s linear infinite;
     
 }
 
 .venus {
     position: absolute;
-    top: -25px;
+    top: -10px;
     left: 50%;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     background-color: rgb(255, 145, 0);
     border-radius: 50%;
     transform: translateX(-50%);
+    background-image: url('https://i.pinimg.com/originals/d3/aa/38/d3aa38b40948b7ca8c7ce2873e85fe01.gif');
+    background-position: center;
 
 }
 
-.orbita3 {
+.orbita-terra {
+
+    /* TOP: altera a posição da orbita (pra cima) */
+    /* LEFT: altera a posição da orbita (pra esquerda) */
+    /* WIDTH: altera a largura da orbita */
+    /* HEIGHT: altera a altura da orbita */
+    /* MARGIN-TOP: altera a posição da orbita */
+    /* MARGIN-LEFT: altera a posição da orbita */
+
     position: relative;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: 600px;
+    top: -150%;
+    left: -1%;
+    width: 800px;
+    height: 800px;
     margin-top: -500px;
     margin-left: -300px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -94,20 +127,233 @@ body {
 
 .terra {
     position: absolute;
-    top: -25px;
+    top: -13px;
     left: 50%;
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     background-color: rgb(103, 108, 255);
     border-radius: 50%;
     transform: translateX(-50%);
-    background-image: url('https://w7.pngwing.com/pngs/188/518/png-transparent-earth-graphy-globe-earth-globe-photography-atmosphere-thumbnail.png');
+    background-image: url('https://i.pinimg.com/originals/dd/e4/dc/dde4dc84d9651a4d0556030d97b8195f.gif');
     background-position: center;
-    background-repeat: no-repeat;
 
 }
 
-@keyframes rotate {
+.orbita-marte {
+
+    /* TOP: altera a posição da orbita (pra cima) */
+    /* LEFT: altera a posição da orbita (pra esquerda) */
+    /* WIDTH: altera a largura da orbita */
+    /* HEIGHT: altera a altura da orbita */
+    /* MARGIN-TOP: altera a posição da orbita */
+    /* MARGIN-LEFT: altera a posição da orbita */
+
+    position: relative;
+    top: -325%;                                    
+    left: 25%;                                      
+    width: 1000px;                                 
+    height: 1000px;                                 
+    margin-top: -550px;                            
+    margin-left: -450px;                            
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate 22.56s linear infinite;
+}
+
+.marte {
+    position: absolute;
+    top: -0.8%;
+    left: 50%;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://i.pinimg.com/originals/38/bc/56/38bc56565ead27975dadedaa937f6840.gif');
+    background-position: center;
+
+}
+
+.orbita-jupiter {
+    
+    /* TOP: altera a posição da orbita (pra cima) */
+    /* LEFT: altera a posição da orbita (pra esquerda) */
+    /* WIDTH: altera a largura da orbita */
+    /* HEIGHT: altera a altura da orbita */
+    /* MARGIN-TOP: altera a posição da orbita */
+    /* MARGIN-LEFT: altera a posição da orbita */
+    
+    position: relative;
+    top: -1200px;                                    
+    left: -50px;                                      
+    width: 1300px;                                 
+    height: 1300px;                                 
+    margin-top: -600px;                            
+    margin-left: -500px;                            
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate 22.56s linear infinite;
+    
+}
+
+.jupiter {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/55/Jupiter_Rotation_Movie_-_Hubble_2015.gif');
+    background-position: center;
+
+}
+
+.orbita-saturno {
+    
+    /* TOP: altera a posição da orbita (pra cima) */
+    /* LEFT: altera a posição da orbita (pra esquerda) */
+    /* WIDTH: altera a largura da orbita */
+    /* HEIGHT: altera a altura da orbita */
+    /* MARGIN-TOP: altera a posição da orbita */
+    /* MARGIN-LEFT: altera a posição da orbita */
+    
+    position: relative;
+    top: -2150px;                                    
+    left: -290px;                                      
+    width: 1700px;                                 
+    height: 1700px;                                 
+    margin-top: -550px;                            
+    margin-left: -450px;                            
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate 22.56s linear infinite;
+    
+}
+
+.saturno {
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    width: 139.82px;
+    height: 139.82px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://planetfacts.org/wp-content/uploads/2023/12/planet_saturn.jpg');
+    background-position: center;
+
+}
+
+.orbita-urano {
+    
+    /* TOP: altera a posição da orbita (pra cima) */
+    /* LEFT: altera a posição da orbita (pra esquerda) */
+    /* WIDTH: altera a largura da orbita */
+    /* HEIGHT: altera a altura da orbita */
+    /* MARGIN-TOP: altera a posição da orbita */
+    /* MARGIN-LEFT: altera a posição da orbita */
+    
+    position: relative;
+    top: -3000px;                                    
+    left: -700px;                                      
+    width: 2500px;                                 
+    height: 2500px;                                 
+    margin-top: -550px;                            
+    margin-left: -450px;                            
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate 22.56s linear infinite;
+    
+}
+
+.urano {
+    position: absolute;
+    top: -215px;
+    left: 50%;
+    width: 139.82px;
+    height: 139.82px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fgifer.com%2Fpt%2F1lLy&psig=AOvVaw2yov9mj9UxcghNE-iuUpTU&ust=1728081002863000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqGAoTCIitg8ih84gDFQAAAAAdAAAAABC4AQ.gif');
+    background-position: center;
+
+}
+
+.orbita-netuno {
+    
+    /* TOP: altera a posição da orbita (pra cima) */
+    /* LEFT: altera a posição da orbita (pra esquerda) */
+    /* WIDTH: altera a largura da orbita */
+    /* HEIGHT: altera a altura da orbita */
+    /* MARGIN-TOP: altera a posição da orbita */
+    /* MARGIN-LEFT: altera a posição da orbita */
+    
+    position: relative;
+    top: -300px;                                    
+    left: 10px;                                      
+    width: 1000px;                                 
+    height: 1000px;                                 
+    margin-top: -550px;                            
+    margin-left: -450px;                            
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate 22.56s linear infinite;
+    
+}
+
+.netuno {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 139.82px;
+    height: 139.82px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://www.google.com/url?sa=i&url=http%3A%2F%2Fciencias-7ano.blogspot.com%2F2018%2F04%2Fcaracteristicas-de-alguns-elementos-do.html&psig=AOvVaw2yov9mj9UxcghNE-iuUpTU&ust=1728081002863000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIitg8ih84gDFQAAAAAdAAAAABA3');
+    background-position: center;
+
+}
+
+.container-info-planetas{
+display: flex;
+flex-direction: rowm; 
+justify-content: right; 
+position: absolute;
+top: 50%;
+right: 20px;
+transform: translateY(-50%); /* Ajusta para o centro */
+z-index: 10;
+
+    }
+.planeta-box{
+background-color: rgba(255,255,255,0,8);
+border: 1px solid rgba(0, 0, 0, 0.2);
+padding: 10px;
+margin: 5px;
+border-radius: 8px;
+cursor: pointer;
+transition: transform 0.2s;
+    
+}
+
+.planeta-box:hover{
+    transform: scale(1.05);
+}
+
+.planeta-info {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.planeta-checkbox:checked + .planeta-box + .planeta-info {
+    display: block;
+}
+    
+
+
+@keyframes d rotate {
     from {
         transform: rotate(0deg);
     }
