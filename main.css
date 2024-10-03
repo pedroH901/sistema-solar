@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+
+}
+
+.sol {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    background-image: url('//www.imagensempng.com.br/wp-content/uploads/2022/02/34324.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: rgba(255, 255, 0, 0.114);
+}
+
+.orbita {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+    
+}
+
+.mercurio {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 77, 77);
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+}
+
+.orbita2 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -300px;
+    margin-left: -200px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+    
+}
+
+.venus {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 145, 0);
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+}
+
+.orbita3 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    margin-top: -500px;
+    margin-left: -300px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: rotate 12s linear infinite;
+    
+}
+
+.terra {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(103, 108, 255);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://w7.pngwing.com/pngs/188/518/png-transparent-earth-graphy-globe-earth-globe-photography-atmosphere-thumbnail.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
