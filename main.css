@@ -9,18 +9,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     margin: 0;
-        background-color: rgb(71, 75, 72);
+    background-color: rgb(71, 75, 72);
     background-size: cover;
     background-position: center;    
+    background-image: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    opacity:inherit;
 
 }
 
 
 .sol {
-    position: relative;
+    position: absolute;
+    top: 80%;
     width: 200px;
     height: 200px;
     background-image: url('https://usagif.com/wp-content/uploads/gifs/sun-40.gif');
@@ -28,7 +31,8 @@ body {
     border-radius: 50%;
     background-position: center;
     opacity: 10;
-    box-shadow: 0 0 30px #efca57, 0 0 60px #bd3901;
+    box-shadow: 10.14px 10.14px 235px 132.5px orange;
+    z-index: -1;
 }
 
 .orbita-mercurio {
@@ -191,7 +195,7 @@ body {
     margin-left: -500px;                            
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    animation: rotate 22.56s linear infinite;
+    animation: rotate 35s linear infinite;
     
 }
 
@@ -226,20 +230,20 @@ body {
     margin-left: -450px;                            
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    animation: rotate 22.56s linear infinite;
+    animation: rotate 40s linear infinite;
     
 }
 
 .saturno {
     position: absolute;
-    top: -70px;
+    top: -95px;
     left: 50%;
-    width: 139.82px;
-    height: 139.82px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     transform: translateX(-50%);
-    background-image: url('https://planetfacts.org/wp-content/uploads/2023/12/planet_saturn.jpg');
-    background-position: center;
+    background-image: url('https://png.pngtree.com/png-vector/20240309/ourmid/pngtree-beautiful-planet-saturn-png-image_11898581.png');
+    background-size: cover;
 
 }
 
@@ -253,7 +257,7 @@ body {
     /* MARGIN-LEFT: altera a posição da orbita */
     
     position: relative;
-    top: -3000px;                                    
+    top: -3700px;                                    
     left: -700px;                                      
     width: 2500px;                                 
     height: 2500px;                                 
@@ -261,19 +265,19 @@ body {
     margin-left: -450px;                            
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    animation: rotate 22.56s linear infinite;
+    animation: rotate 17s linear infinite;
     
 }
 
 .urano {
     position: absolute;
-    top: -215px;
+    top: -75px;
     left: 50%;
     width: 139.82px;
     height: 139.82px;
     border-radius: 50%;
     transform: translateX(-50%);
-    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fgifer.com%2Fpt%2F1lLy&psig=AOvVaw2yov9mj9UxcghNE-iuUpTU&ust=1728081002863000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqGAoTCIitg8ih84gDFQAAAAAdAAAAABC4AQ.gif');
+    background-image: url('https://media.tenor.com/Cc8vOIn32VgAAAAM/uranus-planet.gif');
     background-position: center;
 
 }
@@ -288,47 +292,49 @@ body {
     /* MARGIN-LEFT: altera a posição da orbita */
     
     position: relative;
-    top: -300px;                                    
-    left: 10px;                                      
-    width: 1000px;                                 
-    height: 1000px;                                 
+    top: -6000px;                                    
+    left: -1050px;                                      
+    width: 3200px;                                 
+    height: 3200px;                                 
     margin-top: -550px;                            
     margin-left: -450px;                            
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    animation: rotate 22.56s linear infinite;
+    animation: rotate 19s linear infinite;
     
 }
 
 .netuno {
     position: absolute;
-    top: -25px;
+    top: -70px;
     left: 50%;
     width: 139.82px;
     height: 139.82px;
     border-radius: 50%;
     transform: translateX(-50%);
-    background-image: url('https://www.google.com/url?sa=i&url=http%3A%2F%2Fciencias-7ano.blogspot.com%2F2018%2F04%2Fcaracteristicas-de-alguns-elementos-do.html&psig=AOvVaw2yov9mj9UxcghNE-iuUpTU&ust=1728081002863000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIitg8ih84gDFQAAAAAdAAAAABA3');
+    background-image: url('https://guiadaalma.com.br/wp-content/uploads/2018/01/guia-da-alma-netuno-gif.gif');
     background-position: center;
 
 }
 
 .container-info-planetas{
-display: flex;
-flex-direction: rowm; 
-justify-content: right; 
-position: absolute;
-top: 50%;
-right: 20px;
-transform: translateY(-50%); /* Ajusta para o centro */
-z-index: 10;
+    display: flex;
+    flex-direction: rowm; 
+    justify-content: flex-end; 
+    position: relative;
+    /*top: 100px;*/
+    width: 200px;
+    right: 200px;
+    transform: translateY(0%); /* Ajusta para o centro */
+    z-index: 10;
 
-    }
-.planeta-box{
-background-color: rgba(255,255,255,0,8);
-border: 1px solid rgba(0, 0, 0, 0.2);
-padding: 10px;
-margin: 5px;
+}
+
+.planeta-box {
+background-color: white;
+border: 3px solid rgba(0, 0, 0, 0.2);
+padding: 50px;
+margin: 30px;
 border-radius: 8px;
 cursor: pointer;
 transition: transform 0.2s;
@@ -343,8 +349,8 @@ transition: transform 0.2s;
     display: none;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 40px;
+    margin-top: 15px;
 }
 
 .planeta-checkbox:checked + .planeta-box + .planeta-info {
@@ -353,7 +359,7 @@ transition: transform 0.2s;
     
 
 
-@keyframes d rotate {
+@keyframes rotate {
     from {
         transform: rotate(0deg);
     }
