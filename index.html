@@ -7,64 +7,148 @@
     <link rel="stylesheet" href="main.css"/>
   </head>
   <body>
-    <header>   
-     <div class="container-info-planetas"><input type="checkbox"id="merc"class="planeta-checkbox">
-        <label for="merc" class="planeta-box">Mercúrio</label>
-     <div class="planeta-info">
-        <h2>Mercúrio</h2>
-        <p>Mercúrio é o planeta mais próximo do Sol e o menor do sistema solar.</p>
-    </div>
-    <input type="checkbox" id="ven" class="planeta-checkbox">
-    <label for="ven" class="planeta-box">Vênus</label>
-    <div class="planeta-info">
-        <h2>Vênus</h2>
-        <p>Vênus é o segundo planeta mais próximo do Sol e é conhecido como o 'planeta irmão' da Terra.</p>
-    </div>
+    
+    <header class="cabecalho"> 
+      <ul>
+          <li class="dropdown">
+              <a class="menu">Planetas</a>
+              <div class="dropdown-menu"> 
+                <div class="dropdown-item-container">
+                  <label class="dropdown-item" for="sol">SOL</label>
+                  <input type="checkbox" id="sol" class="toggle" hidden>
+                  <div class="info" id="sol-info">
+                    <img src="https://media1.tenor.com/m/O5as23V0QaMAAAAC/baby-sun-teletubbies.gif" alt="sol" width="400" height="200">
+                    <p>Sol</p>
+                  </br>
+                    <p>Tipo: Estrela de tamanho médio (anã amarela).</p>
+                  </br>
+                    <p>Posição: Centro do Sistema Solar.</p>
+                  </br>
+                    Características: Fonte de energia e luz para os planetas, composto de hidrogênio e hélio. Gera calor e luz por fusão nuclear, sendo responsável por 99,86% da massa do Sistema Solar.</div>
+                </div>
+                  
+                <div class="dropdown-item-container">
+                  <label class="dropdown-item" for="mercurio">MERCÚRIO</label>
+                  <input type="checkbox" id="mercurio" class="toggle" hidden>
+                  <div class="info" id="mercurio-info"> 
+                    <img src="https://i.pinimg.com/originals/f4/0e/12/f40e12a3f587bfcaa941c8d3b136cec7.gif" alt="mercurio">
+                    <p>Mercurio</p>
+                  </br>
+                    <p>Menor planeta do Sistema Solar.</p>
+                  </br>
+                    <p>Posição: Mais próximo do sol.</p>
+                  </br>
+                  Características: Muito quente durante o dia e extremamente frio à noite. Não tem atmosfera densa para reter calor.</div>
+                </div>
+                
+                <div class="dropdown-item-container">
+                  <label class="dropdown-item" for="venus">VÊNUS</label>
+                  <input type="checkbox" id="venus" class="toggle" hidden>
+                  <div class="info" id="venus-info">
+                    <img src="https://i.pinimg.com/originals/c5/b3/cc/c5b3cc8ad7bba4a5693bf44a4e93b6d3.gif" alt="venus" width="300" height="300">
+                    <p>Vênus</p>
+                  </br>
+                    <p>Similar à Terra em diâmetro.</p>
+                  </br>
+                    <p>Posição: Segundo planeta mais próximo do Sol.</p>
+                  </br>
+                  Características: Atmosfera densa de dióxido de carbono, o que cria um efeito estufa extremo. É o planeta mais quente do Sistema Solar.</div>
+                </div>
 
-    <input type="checkbox" id="ter" class="planeta-checkbox">
-    <label for="ter" class="planeta-box">Terra</label>
-    <div class="planeta-info">
-        <h2>Terra</h2>
-        <p>A Terra é o terceiro planeta do sistema solar e o único conhecido por abrigar vida.</p>
-    </div>
+                  <div class="dropdown-item-container">
+                  <label class="dropdown-item" for="terra">TERRA</label>
+                  <input type="checkbox" id="terra" class="toggle" hidden>
+                  <div class="info" id="terra-info">
+                    <img src="https://cdn.pixabay.com/animation/2022/12/24/01/36/01-36-27-376_512.gif" alt="terra" width="300" height="300">
+                    <p>Terra</p>
+                  </br>
+                    <p>Quinto maior planeta.</p>
+                  </br>
+                    <p>Posição: Terceiro planeta a partir do Sol.</p>
+                  </br>
+                  Características: O único planeta conhecido com água líquida e vida. Atmosfera rica em oxigênio.</div>
+                </div>
 
-    <input type="checkbox" id="mar" class="planeta-checkbox">
-    <label for="mar" class="planeta-box">Marte</label>
-    <div class="planeta-info">
-        <h2>Marte</h2>
-        <p>Marte é o quarto planeta do sistema solar e é conhecido como o 'planeta vermelho'.</p>
-    </div>
+                  <div class="dropdown-item-container">
+                  <label class="dropdown-item" for="marte">MARTE</label>
+                  <input type="checkbox" id="marte" class="toggle" hidden>
+                  <div class="info" id="marte-info"><img src="https://i.gifer.com/7gz4.gif" alt="terra" width="300" height="300">
+                    <p>Terra</p>
+                  </br>
+                    <p>Menor que a Terra.</p>
+                  </br>
+                    <p>Posição: Quarto planeta.</p>
+                  </br>
+                  Características: Conhecido como o "planeta vermelho" devido ao óxido de ferro na sua superfície. Possui calotas polares e vulcões inativos.</div>
+                </div>
 
-    <input type="checkbox" id="jup" class="planeta-checkbox">
-    <label for="jup" class="planeta-box">Júpiter</label>
-    <div class="planeta-info">
-        <h2>Júpiter</h2>
-        <p>Júpiter é o maior planeta do sistema solar e possui uma grande mancha vermelha, que é uma tempestade.</p>
-    </div>
+                  <div class="dropdown-item-container">
+                  <label class="dropdown-item" for="jupiter">JUPITER</label>
+                  <input type="checkbox" id="jupiter" class="toggle" hidden>
+                  <div class="info" id="jupiter-info">
+                    <img src="https://i.pinimg.com/originals/b2/6c/8a/b26c8a86dceb0055a8719d9effed23bc.gif" alt="jupiter" width="400" height="400">
+                    <p>Jupiter</p>
+                  </br>
+                    <p>O maior planeta do Sistema Solar.</p>
+                  </br>
+                    <p>Posição: Quinto a partir do Sol.</p>
+                  </br>
+                  Características: Composto principalmente de gás (hidrogênio e hélio). Tem a Grande Mancha Vermelha, uma tempestade gigante.
+                  </div>
+                </div>
 
-    <input type="checkbox" id="sat" class="planeta-checkbox">
-    <label for="sat" class="planeta-box">Saturno</label>
-    <div class="planeta-info">
-        <h2>Saturno</h2>
-        <p>Saturno é conhecido por seus impressionantes anéis e é o segundo maior planeta do sistema solar.</p>
-    </div>
+                  <div class="dropdown-item-container">
+                  <label class="dropdown-item" for="saturno">SATURNO</label>
+                  <input type="checkbox" id="saturno" class="toggle" hidden>
+                  <div class="info" id="saturno-info">
+                    <img src="https://media.tenor.com/X41MtjA-OJUAAAAM/mercury-space.gif" alt="saturno">
+                    <p>Saturno</p>
+                  </br>
+                    <p>Segundo maior planeta</p>
+                  </br>
+                    <p> Sexto planeta.</p>
+                  </br>
+                  Características: Famoso por seus anéis de gelo e poeira. Também é um gigante gasoso como Júpiter.
 
-    <input type="checkbox" id="ura" class="planeta-checkbox">
-    <label for="ura" class="planeta-box">Urano</label>
-    <div class="planeta-info">
-        <h2>Urano</h2>
-        <p>Urano é um gigante gasoso e o único planeta que gira de lado.</p>
-    </div>
+                  </div>
+                </div>
 
-    <input type="checkbox" id="net" class="planeta-checkbox">
-    <label for="net" class="planeta-box">Netuno</label>
-    <div class="planeta-info">
-        <h2>Netuno</h2>
-        <p>Netuno é o planeta mais distante do Sol e possui ventos extremamente fortes.</p>
-    </div>
-</div>
+                  <div class="dropdown-item-container">
+                  <label class="dropdown-item" for="urano">URANO</label>
+                  <input type="checkbox" id="urano" class="toggle" hidden>
+                  <div class="info" id="urano-info">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_ChkN2NLs_6oxggtNXIQTTefqd15Yfb1ZlJry-DSxHA7eTSmcRtLLG8Hin9EeEIuQs3sQ03iGozodbS1FRAJmodRa-aSy-9Qy04IyrkFitetTzdBp1VOoshiimrN-nQ-r5BFK7WptKHgQ/s640/p02h9l99.jpg" alt="urano" width="500" height="300">
+                    <p>Urano</p>
+                  </br>
+                    <p>Terceiro maior planeta.</p>
+                  </br>
+                    <p>Posição: Sétimo planeta.</p>
+                  </br>
+                  Características: Tem um eixo de rotação inclinado, o que faz com que “role” ao orbitar o Sol. É composto principalmente de gelo e gás.
 
-    </header>
+                  </div>
+                </div>
+
+                  <div class="dropdown-item-container">
+                  <label class="dropdown-item" for="netuno">NETUNO</label>
+                  <input type="checkbox" id="netuno" class="toggle" hidden>
+                  <div class="info" id="netuno-info">
+                    <img src="https://i.pinimg.com/originals/d1/9f/e4/d19fe4b78222cdba460698891a1e4f0f.gif" alt="netuno">
+                    <p>Netuno</p>
+                  </br>
+                    <p>Similar em tamanho a Urano.</p>
+                  </br>
+                    <p>Oitavo e mais distante do Sol.</p>
+                  </br>
+                  Características: Um planeta gasoso com ventos extremamente fortes. Tem uma cor azul devido ao metano na sua atmosfera.
+
+                  </div>
+                </div>
+              </div>
+          </li>
+      </ul>
+  </header>
+  
 
     <div class="sol">
       <div class="orbita-mercurio">

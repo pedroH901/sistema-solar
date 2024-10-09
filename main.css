@@ -6,6 +6,7 @@
 }
 
 body {
+    text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +16,7 @@ body {
     background-size: cover;
     background-position: center;  
     background-image: url('https://images.unsplash.com/photo-1520034475321-cbe63696469a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D.jpeg');
-
+    /*perspective: 200px; /* Define a perspectiva 3D */
     /* background-image: url('https://wallpapers.com/images/hd/high-resolution-galaxy-background-2560-x-1600-qi10b3z2ug2lhv59.jpg'); */
     
 }
@@ -36,6 +37,7 @@ body {
     z-index: -1;
     background-size: cover;
     background-clip: content-box;
+   /* transform: rotateX(30deg) rotateY(0deg); /* Inclina a cena em 60 graus no eixo X e 0 graus no eixo Y */
 
 }
 
@@ -149,6 +151,7 @@ body {
     background-position: center;
     background-size: cover;
     background-clip: content-box;
+    
 
 }
 
@@ -370,44 +373,72 @@ background-size: cover;
 
 
 }
-    
-.container-info-planetas{
+
+.dropdown-item {
+    font-family: monospace;
+    color: #ffffff; /* Cor do texto */
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: #0000ff; /* Cor do botão */
+    border: 1px solid #0000ff; /* Borda do botão */
+    border-radius: 5px; /* Arredondamento do botão */
+    cursor: pointer; /* Mudança do cursor para indicar botão clicável */
+    transition: background-color 0.3s; /* Suaviza a transição da cor */
+}
+
+.dropdown-item-container {
     display: flex;
-    flex-direction: column; 
-   justify-content: flex-end;
-    position: absolute;
-    left: 1000px; 
-    top: -10%; 
-    position: fixed;
-
+    flex-direction: column; /* Organiza cada botão e seu conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo em cada coluna */
+    margin-right: 15px; /* Espaço entre cada botão */
 }
 
-.planeta-box {
-background-color: white;
-border: 3px solid rgba(0, 0, 0, 0.2);
-padding: 50px;
-margin: 30px;
-border-radius: 8px;
-cursor: pointer;
-transition: transform 0.2s;
+.dropdown-item:hover {
+    background-color: #003399; /* Cor ao passar o mouse */
+}
+
+.dropdown-menu {
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+}
+
+.info {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-top: 5px;
+    font-family: monospace;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.menu {
+    font-size: larger;
+    color: white;
     
 }
 
-.planeta-box:hover{
-    transform: scale(1.05);
-}
-
-.planeta-info {
-    display: none;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
-    padding: 40px;
-    margin-top: 15px;
-}
-
-.planeta-checkbox:checked + .planeta-box + .planeta-info {
+/* Exibe o conteúdo quando o checkbox correspondente estiver marcado */
+input[type="checkbox"]:checked + .info {
     display: block;
 }
+
+/* Oculta o checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 
 @keyframes rotate {
     from {
